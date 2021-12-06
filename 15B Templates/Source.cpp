@@ -11,8 +11,14 @@ using namespace std;
 
 template <typename T>
 
-T half(T value)
+T half (T value)
 {
 	return value / 2;
 }
 
+int half(int value)
+{
+	if (value % 2 == 0) return value / 2;
+	else return (int)(value / 2) + 1;
+}
+ 
